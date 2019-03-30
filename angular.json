@@ -27,7 +27,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/saas/styles.scss"
+              "src/saas/styles.scss",
+              "src/saas/theme.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true
