@@ -1,24 +1,11 @@
 .sn-root {
     
-    max-height: 100vh;
-
-    .content {
+    .nav-bar {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .header {
-        text-align: center;
-        flex-basis: 10%;
-        font-size: 2em;
-    }
+        flex-direction: row;
 
-    .image {
-        flex-basis: 60%;
-        .soon-img {
-            border-radius: 50%;
+        .flex-spacer {
+            flex: 1 1 auto;
         }
     }
 }
