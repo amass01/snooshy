@@ -3,9 +3,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { ToolBarComponent } from './tool-bar/tool-bar.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [ToolBarComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
