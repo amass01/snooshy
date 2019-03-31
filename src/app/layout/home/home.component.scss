@@ -1,0 +1,13 @@
+@import '../../../saas/common/variables';
+.sn-home {
+    width: 100%;
+    height: calc(100vh - 80px);
+    color: white;
+
+    .sn-home-header {
+        height: calc(100vh - 80px);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
