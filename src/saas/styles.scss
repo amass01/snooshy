@@ -1,9 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import './common/variables';
 
 body {
     font-family: “Droid Arabic Naskh”, serif;
     direction: rtl;
     margin: 0,
 }
+
+.sn-container {
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+
+    @media (min-width: 768px) {
+      width: 750px !important; 
+    }
+    @media (min-width: 992px) {
+        width: 970px !important;
+    }
+    @media (min-width: 1200px) {
+        width: 1170px !important;
+    }
+}
+
 

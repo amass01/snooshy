@@ -1,6 +1,20 @@
 .sn-tool-bar {
-    display: flex;
-    flex-direction: row;
+
+    height: 80px;
+    
+    .sn-tool-bar-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .mat-icon {
+            font-size: 35px;
+        }
+
+        .sn-tool-bar-logo {
+            height: 65px;
+        }
+    }
 
     .flex-spacer {
         flex: 1 1 auto;
