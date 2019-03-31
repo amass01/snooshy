@@ -1,0 +1,9 @@
+.sn-order {
+    width: 100%;
+    .sn-order-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
