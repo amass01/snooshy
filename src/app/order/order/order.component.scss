@@ -9,11 +9,60 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        .sn-order-title {
+            font-size: 24px;
+            margin-bottom: $margin-l;
+        }
+
         .sn-order-list {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             width: 100%;
+
+            .list-item {
+                width: 100%;
+                background-color: $primary-color;
+                margin: $margin-m;
+
+                height: 175px;
+                border-radius: 8px;
+                position: relative;
+                
+                .list-item-cover {
+                    height: 100%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position-y: 30%; 
+                    position: relative;
+                }
+
+                .list-item-content {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    color: white;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    .flex-spacer {
+                        flex: 1 1 auto;
+                    }
+
+                    .list-item-infobar {
+                        background-color: $primary-color;
+                        flex-basis: 33%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 $padding-l;
+                    }
+                }
+            }
         }
     }
 
