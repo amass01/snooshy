@@ -4,10 +4,17 @@
     
     margin-top: $margin-xxl;
 
-    .sn-order-list {
+    .sn-order-content {
+
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .sn-order-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
     }
+
 }
