@@ -7,10 +7,16 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    data: {
+      animation: 'Home'
+    }
   },
   {
     path: 'order',
     component: OrderComponent,
+    data: {
+      animation: 'Order'
+    }
   },
 ];
 

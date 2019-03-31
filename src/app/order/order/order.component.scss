@@ -1,5 +1,9 @@
+@import '../../../saas/common/variables';
+
 .sn-order {
-    width: 100%;
+    
+    margin-top: $margin-xxl;
+
     .sn-order-list {
         display: flex;
         flex-direction: row;

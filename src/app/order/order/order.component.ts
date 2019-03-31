@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-interface product {
+interface Product {
   name: string;
   price: number;
   description: string;
@@ -13,7 +13,17 @@ interface product {
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  public products: Product[]; 
+
+  constructor() {
+    this.products = [
+      {
+        name: 'חמוצים יפנים',
+        price: 10,
+        description: '',
+      }
+    ]
+  }
 
   ngOnInit() {
   }
