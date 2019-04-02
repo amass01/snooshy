@@ -27,7 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/saas/fonts.scss",
               "src/saas/styles.scss",
               "src/saas/theme.scss"
             ],
