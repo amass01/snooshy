@@ -1,5 +1,10 @@
 @import '~@angular/material/theming';
 @import './common/variables';
+
 @include mat-core();
+
+$general-typography: mat-typography-config(
+    $font-family: $snooshy-font-string
+);
 
 @include angular-material-theme($my-app-theme);

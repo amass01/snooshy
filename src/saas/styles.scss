@@ -1,5 +1,7 @@
+@import './common/variables';
+
 body {
-    font-family: "Open Sans",sans-serif;
+    font-family: $snooshy-font;
     direction: rtl;
     margin: 0,
 }
