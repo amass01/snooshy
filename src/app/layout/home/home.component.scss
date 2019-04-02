@@ -16,6 +16,13 @@
             font-size: 22px;
             color: $primary-color;
         }
+
+        .video-wrapper {
+            margin-top: $margin-l;
+            .video {
+                width: 100%;
+            }
+        }
     }
 }
 
