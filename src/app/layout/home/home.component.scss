@@ -23,6 +23,19 @@
                 width: 100%;
             }
         }
+
+        .video-action {
+            width: 375px;
+            margin-top: $margin-m;
+            align-self: center;
+
+            button {
+                width: 100%;
+                font-size: 22px;
+                font-weight: 700;
+                color: $accent-color;
+            }
+        }
     }
 }
 
