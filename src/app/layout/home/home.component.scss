@@ -3,38 +3,17 @@
     width: 100%;
     height: calc(100vh - 80px);
     color: white;
-    position: relative;
-
-    .sn-home-header {
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-
-        &:before {
-            content: '\A';
-            position: absolute;
-            width: 100%; 
-            height:100%;
-            top:0; left:0;
-            background: rgba(9, 29, 48, 0.5);
-            z-index: 0;
-        }
-    }
 
     .sn-home-content {
+        padding: $padding-xl;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
         width: 100%;
         height: 100%;
 
         .message {
             // TODO: use var
-            font-size: 42px;
+            font-size: 22px;
             color: $primary-color;
         }
     }
