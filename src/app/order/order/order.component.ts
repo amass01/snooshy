@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Products {
-  starters: Product[],
+class Section {
+  constructor(public title: string, public products: Product[], public visible: boolean) {}
 }
 
-interface Product {
-  name: string;
-  price: number;
-  description?: string;
-  imgPath: string;
+class Product {
+  constructor(public name: string, public price: number, public imgPath: string, public description?: string) {}
 }
 
 @Component({
@@ -18,57 +15,61 @@ interface Product {
 })
 export class OrderComponent implements OnInit {
 
-  public products: Products; 
+  public sections: Section[]; 
 
   constructor() {
-    this.products = {
-      starters: [
-        {
-          name: 'חמוצים יפנים',
-          price: 10,
-          imgPath: 'starters/tona.jpg',
-        },
-        {
-          name: 'אדממה',
-          price: 15,
-          imgPath: 'starters/tona.jpg',
-        },
-        {
-          name: 'נאגטס עוף',
-          price: 25,
-          imgPath: 'starters/tona.jpg',
-        },
+    this.sections = [
+      {
+        title: 'ראשונות',
+        products: [
+          {
+            name: 'חמוצים יפנים',
+            price: 10,
+            imgPath: 'starters/tona.jpg',
+          },
+          {
+            name: 'אדממה',
+            price: 15,
+            imgPath: 'starters/tona.jpg',
+          },
+          {
+            name: 'נאגטס עוף',
+            price: 25,
+            imgPath: 'starters/tona.jpg',
+          },
 
-        {
-          name: 'הום פרייז',
-          price: 15,
-          imgPath: 'starters/tona.jpg',
-        },
+          {
+            name: 'הום פרייז',
+            price: 15,
+            imgPath: 'starters/tona.jpg',
+          },
 
-        {
-          name: 'אגרול',
-          price: 15,
-          imgPath: 'starters/agrol.jpg',
-        },
+          {
+            name: 'אגרול',
+            price: 15,
+            imgPath: 'starters/agrol.jpg',
+          },
 
-        {
-          name: 'כנפיים',
-          price: 25,
-          imgPath: 'starters/tona.jpg',
-        },
-        {
-          name: "סביצ'ה סלמון",
-          price: 30,
-          imgPath: 'starters/sabicha.jpg',
-        },
-        {
-          name: "ברוסקטה טונה",
-          price: 30,
-          description: '',
-          imgPath: 'starters/tona.jpg',
-        },
-      ],
-    }
+          {
+            name: 'כנפיים',
+            price: 25,
+            imgPath: 'starters/tona.jpg',
+          },
+          {
+            name: "סביצ'ה סלמון",
+            price: 30,
+            imgPath: 'starters/sabicha.jpg',
+          },
+          {
+            name: "ברוסקטה טונה",
+            price: 30,
+            description: '',
+            imgPath: 'starters/tona.jpg',
+          },
+        ],
+        visible: true,
+      }
+    ]
   }
 
   getImageFullUrl(imgPath: string) {

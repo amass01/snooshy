@@ -1,17 +1,21 @@
 <div class="sn-order">
   <div class="sn-container">
     <div class="sn-order-content">
-      <div class="sn-order-section">
+      <div class="sn-order-section"
+           *ngFor="let section of sections">
         <mat-toolbar class="sn-order-section-toolbar" 
                      color="accent"
         >
-          <mat-toolbar-row>
-            <span>ראשונות</span>
+          <mat-toolbar-row class="toolbar-row">
+            <span>{{section.title}}</span>
+            <mat-icon color="white">
+              arrow_upward
+            </mat-icon>
           </mat-toolbar-row>
         </mat-toolbar>
         <div class="sn-order-list">
           <div class="list-item mat-elevation-z11"
-               *ngFor="let item of products.starters">
+               *ngFor="let item of section.products">
             <div class="list-item-cover" [style.backgroundImage]="getImageFullUrl(item.imgPath)">
             </div>
             <div class="list-item-content">
@@ -19,7 +23,7 @@
 
               </div>
               <div class="list-item-infobar">
-                <div>
+                <div class="list-item-name">
                   {{item.name}}
                 </div>
                 <button class="shopping-basket-button" mat-mini-fab color="accent" aria-label="shopping carts">
