@@ -10,7 +10,8 @@
           </mat-toolbar-row>
         </mat-toolbar>
         <div class="sn-order-list">
-          <div class="list-item mat-elevation-z11">
+          <div class="list-item mat-elevation-z11"
+               *ngFor="let item of products.starters">
             <div class="list-item-cover" [style.backgroundImage]="'url(../../../assets/img/products/fresh-fish.jpg)'">
             </div>
             <div class="list-item-content">
@@ -19,7 +20,7 @@
               </div>
               <div class="list-item-infobar">
                 <div>
-                  ברוסקטה טונה
+                  {{item.name}}
                 </div>
                 <button class="shopping-basket-button" mat-mini-fab color="accent" aria-label="shopping carts">
                   <mat-icon color="primary">
@@ -28,12 +29,6 @@
                 </button>
               </div>
             </div>
-          </div>
-          <div class="list-item mat-elevation-11">
-            2
-          </div>
-          <div class="list-item mat-elevation-z11">
-            3
           </div>
         </div>
       </div>
