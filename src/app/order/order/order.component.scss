@@ -39,6 +39,7 @@
                         background-repeat: no-repeat;
                         background-position-y: 30%; 
                         position: relative;
+                        border-radius: $radius-m;
                     }
     
                     .list-item-content {
@@ -63,6 +64,8 @@
                             justify-content: space-between;
                             align-items: center;
                             padding: 0 $padding-l;
+                            border-bottom-left-radius: $radius-m;
+                            border-bottom-right-radius: $radius-m;
                         }
                     }
                 }
