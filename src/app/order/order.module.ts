@@ -1,6 +1,6 @@
 import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
-import { OrderComponent } from './order/order.component';
+import { OrderComponent } from './order.component';
 
 @NgModule({
   declarations: [
