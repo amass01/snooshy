@@ -76,6 +76,10 @@ export class OrderComponent implements OnInit {
     return `url(../../../assets/img/products/hd/${imgPath})` 
   }
 
+  toggleSection(section: Section) {
+    section.visible = !section.visible;
+  }
+
   ngOnInit() {
   }
 

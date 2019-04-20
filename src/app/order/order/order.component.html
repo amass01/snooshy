@@ -8,12 +8,16 @@
         >
           <mat-toolbar-row class="toolbar-row">
             <span>{{section.title}}</span>
-            <mat-icon color="white">
-              arrow_upward
-            </mat-icon>
+            <button mat-icon-button
+                    (click)="toggleSection(section)">
+              <mat-icon color="white">
+                 {{section.visible ? 'arrow_upward' : 'arrow_downward' }}
+              </mat-icon>
+            </button>
           </mat-toolbar-row>
         </mat-toolbar>
-        <div class="sn-order-list">
+        <div class="sn-order-list"
+             *ngIf="section.visible">
           <div class="list-item mat-elevation-z11"
                *ngFor="let item of section.products">
             <div class="list-item-cover" [style.backgroundImage]="getImageFullUrl(item.imgPath)">
