@@ -21,11 +21,12 @@
             .sn-order-list {
                 display: flex;
                 flex-direction: row;
-                align-items: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
                 width: 100%;
     
                 .list-item {
-                    width: 100%;
+                    flex: 30%;
                     background-color: $primary-color;
                     margin: $margin-m;
     
