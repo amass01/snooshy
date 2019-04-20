@@ -48,7 +48,7 @@ export class OrderComponent implements OnInit {
         {
           name: 'אגרול',
           price: 15,
-          imgPath: 'starters/tona.jpg',
+          imgPath: 'starters/agrol.jpg',
         },
 
         {
@@ -59,7 +59,7 @@ export class OrderComponent implements OnInit {
         {
           name: "סביצ'ה סלמון",
           price: 30,
-          imgPath: 'starters/tona.jpg',
+          imgPath: 'starters/sabicha.jpg',
         },
         {
           name: "ברוסקטה טונה",
