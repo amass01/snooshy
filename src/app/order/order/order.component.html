@@ -1,10 +1,15 @@
 <div class="sn-order">
   <div class="sn-container">
     <div class="sn-order-content">
-      <div class="sn-order-title">
-        ראשונות
-      </div>
-      <div class="sn-order-list">
+      <div class="sn-order-section">
+        <mat-toolbar class="sn-order-section-toolbar" 
+                     color="accent"
+        >
+          <mat-toolbar-row>
+            <span>ראשונות</span>
+          </mat-toolbar-row>
+        </mat-toolbar>
+        <div class="sn-order-list">
           <div class="list-item mat-elevation-z11">
             <div class="list-item-cover" [style.backgroundImage]="'url(../../../assets/img/products/fresh-fish.jpg)'">
             </div>
@@ -18,7 +23,7 @@
                 </div>
                 <button class="shopping-basket-button" mat-mini-fab color="accent" aria-label="shopping carts">
                   <mat-icon color="primary">
-                      add
+                    add
                   </mat-icon>
                 </button>
               </div>
@@ -30,6 +35,7 @@
           <div class="list-item mat-elevation-z11">
             3
           </div>
+        </div>
       </div>
     </div>
   </div>

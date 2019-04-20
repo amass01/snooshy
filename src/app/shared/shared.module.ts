@@ -10,12 +10,14 @@ import { CommonModule } from '@angular/common';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatToolbarModule,
   ],
   exports: [
     CommonModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatToolbarModule
   ],
 })
 export class SharedModule { }
