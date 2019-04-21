@@ -1,12 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-
-class Section {
-  constructor(public title: string, public products: Product[], public visible: boolean) {}
-}
-
-class Product {
-  constructor(public name: string, public price: number, public imgPath: string, public description?: string) {}
-}
+import { Section } from "../core/models/section";
+import { Product } from "../core/models/product";
+import { BasketService } from '../core/services/basket.service';
 
 @Component({
   selector: "sn-order",
@@ -17,7 +12,9 @@ export class OrderComponent implements OnInit {
 
   public sections: Section[];
 
-  constructor() {
+  constructor(
+    private basketService: BasketService,
+  ) {
     this.sections = [
       {
         title: "ראשונות",
@@ -112,6 +109,10 @@ export class OrderComponent implements OnInit {
 
   toggleSection(section: Section) {
     section.visible = !section.visible;
+  }
+
+  addProductToBasket(product: Product) {
+    this.basketService.addProductToBasket(product);
   }
 
   ngOnInit() {

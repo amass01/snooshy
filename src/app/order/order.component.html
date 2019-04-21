@@ -30,7 +30,11 @@
                 <div class="list-item-name">
                   {{item.name}} | {{item.price + ' ₪' }} 
                 </div>
-                <button class="shopping-basket-button" mat-mini-fab color="accent" aria-label="shopping carts">
+                <button class="shopping-basket-button"
+                        (click)="addProductToBasket(item)" 
+                        mat-mini-fab color="accent" 
+                        aria-label="shopping cart"
+                >
                   <mat-icon color="primary">
                     add
                   </mat-icon>
