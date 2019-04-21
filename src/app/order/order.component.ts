@@ -35,7 +35,7 @@ export class OrderComponent implements OnInit {
           {
             name: "נאגטס עוף",
             price: 25,
-            imgPath: "starters/tona.jpg",
+            imgPath: "starters/naggets.jpg",
           },
 
           {
@@ -75,19 +75,19 @@ export class OrderComponent implements OnInit {
           {
             name: "סלט ים",
             price: 40,
-            imgPath: "",
+            imgPath: "salads/salad.jpg",
             description: "",
           },
           {
             name: "סלט פפאיה חריף",
             price: 30,
-            imgPath: "",
+            imgPath: "salads/salad.jpg",
             description: "",
           },
           {
             name: "סלט הומפרייז",
             price: 30,
-            imgPath: "",
+            imgPath: "salads/salad.jpg",
             description: "",
           },
         ],
