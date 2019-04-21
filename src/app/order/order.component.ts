@@ -68,7 +68,41 @@ export class OrderComponent implements OnInit {
           },
         ],
         visible: true,
-      }
+      },
+      {
+        title: "סלטים",
+        products: [
+          {
+            name: "סלט ים",
+            price: 40,
+            imgPath: "",
+            description: "",
+          },
+          {
+            name: "סלט פפאיה חריף",
+            price: 30,
+            imgPath: "",
+            description: "",
+          },
+          {
+            name: "סלט הומפרייז",
+            price: 30,
+            imgPath: "",
+            description: "",
+          },
+        ],
+        visible: false,
+      },
+      // {
+      //   title: "מאודים",
+      //   products: [
+      //     {
+      //       name: "",
+      //       price
+      //     }
+      //   ],
+      //   visible: false,
+      // }
     ];
   }
 
