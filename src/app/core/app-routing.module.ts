@@ -2,6 +2,7 @@ import { HomeComponent } from "./home/home.component";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { OrderComponent } from "../order/order.component";
+import { BasketComponent } from "../basket/basket/basket.component";
 
 const routes: Routes = [
   {
@@ -16,6 +17,13 @@ const routes: Routes = [
     component: OrderComponent,
     data: {
       animation: "Order"
+    }
+  },
+  {
+    path: "basket",
+    component: BasketComponent,
+    data: {
+      animation: "Basket"
     }
   },
   {
