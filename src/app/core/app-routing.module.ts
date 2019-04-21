@@ -1,27 +1,27 @@
-import { HomeComponent } from './../layout/home/home.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { OrderComponent } from '../order/order.component';
+import { HomeComponent } from "./../layout/home/home.component";
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { OrderComponent } from "../order/order.component";
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: "home",
     component: HomeComponent,
     data: {
-      animation: 'Home'
+      animation: "Home"
     }
   },
   {
-    path: 'order',
+    path: "order",
     component: OrderComponent,
     data: {
-      animation: 'Order'
+      animation: "Order"
     }
   },
   {
-    path: '',
-    redirectTo: 'home', 
-    pathMatch: 'full' 
+    path: "",
+    redirectTo: "home",
+    pathMatch: "full"
   },
 ];
 

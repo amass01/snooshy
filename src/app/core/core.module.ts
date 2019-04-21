@@ -1,7 +1,7 @@
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from './app-routing.module';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { AppRoutingModule } from "./app-routing.module";
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
 @NgModule({
   declarations: [],
@@ -10,7 +10,7 @@ import { BrowserModule } from '@angular/platform-browser';
     BrowserAnimationsModule,
     AppRoutingModule,
   ],
-  exports:[
+  exports: [
     AppRoutingModule,
   ]
 })

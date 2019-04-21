@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ToolBarComponent } from './tool-bar.component';
+import { ToolBarComponent } from "./tool-bar.component";
 
-describe('ToolBarComponent', () => {
+describe("ToolBarComponent", () => {
   let component: ToolBarComponent;
   let fixture: ComponentFixture<ToolBarComponent>;
 
@@ -19,7 +19,7 @@ describe('ToolBarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

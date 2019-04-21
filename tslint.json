@@ -58,7 +58,7 @@
     "ordered-imports": false,
     "quotemark": [
       true,
-      "single"
+      "double"
     ],
     "trailing-comma": false,
     "no-output-on-prefix": true,
@@ -72,6 +72,9 @@
     "component-class-suffix": true,
     "directive-class-suffix": true,
     "directive-selector": [true, "attribute", "sn", "camelCase"],
-    "component-selector": [true, "element", "sn", "kebab-case"],
+    "component-selector": [true, "element", "sn", "kebab-case"]
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false
   }
 }

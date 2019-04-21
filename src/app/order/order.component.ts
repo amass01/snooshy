@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 class Section {
   constructor(public title: string, public products: Product[], public visible: boolean) {}
@@ -9,71 +9,71 @@ class Product {
 }
 
 @Component({
-  selector: 'sn-order',
-  templateUrl: './order.component.html',
-  styleUrls: ['./order.component.scss']
+  selector: "sn-order",
+  templateUrl: "./order.component.html",
+  styleUrls: ["./order.component.scss"]
 })
 export class OrderComponent implements OnInit {
 
-  public sections: Section[]; 
+  public sections: Section[];
 
   constructor() {
     this.sections = [
       {
-        title: 'ראשונות',
+        title: "ראשונות",
         products: [
           {
-            name: 'חמוצים יפנים',
+            name: "חמוצים יפנים",
             price: 10,
-            imgPath: 'starters/tona.jpg',
+            imgPath: "starters/tona.jpg",
           },
           {
-            name: 'אדממה',
+            name: "אדממה",
             price: 15,
-            imgPath: 'starters/tona.jpg',
+            imgPath: "starters/tona.jpg",
           },
           {
-            name: 'נאגטס עוף',
+            name: "נאגטס עוף",
             price: 25,
-            imgPath: 'starters/tona.jpg',
+            imgPath: "starters/tona.jpg",
           },
 
           {
-            name: 'הום פרייז',
+            name: "הום פרייז",
             price: 15,
-            imgPath: 'starters/tona.jpg',
+            imgPath: "starters/tona.jpg",
           },
 
           {
-            name: 'אגרול',
+            name: "אגרול",
             price: 15,
-            imgPath: 'starters/agrol.jpg',
+            imgPath: "starters/agrol.jpg",
           },
 
           {
-            name: 'כנפיים',
+            name: "כנפיים",
             price: 25,
-            imgPath: 'starters/tona.jpg',
+            imgPath: "starters/tona.jpg",
           },
           {
             name: "סביצ'ה סלמון",
             price: 30,
-            imgPath: 'starters/sabicha.jpg',
+            imgPath: "starters/sabicha.jpg",
           },
           {
             name: "ברוסקטה טונה",
             price: 30,
-            description: '',
-            imgPath: 'starters/tona.jpg',
+            description: "",
+            imgPath: "starters/tona.jpg",
           },
         ],
         visible: true,
       }
-    ]
+    ];
   }
 
   getImageFullUrl(imgPath: string) {
-    return `url(../../../assets/img/products/hd/${imgPath})` 
+    return `url(../../../assets/img/products/hd/${imgPath})`;
   }
 
   toggleSection(section: Section) {
