@@ -1,0 +1,13 @@
+@import '../../../saas/common/variables';
+.sn-basket {
+    width: 100%;
+    height: calc(100vh - 80px);
+
+    .sn-basket-content {
+        padding: $padding-xl;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
