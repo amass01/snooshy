@@ -2,8 +2,17 @@
   <div class="sn-tool-bar-content sn-container">
     <img class="sn-tool-bar-logo" 
          src='../../../assets/img/logo-s.png'
-         routerLink="/" 
+         routerLink="/home" 
     />
+
+    <button class="sn-tool-bar-item" 
+            routerLink="/home"
+            mat-raised-button 
+            color="accent"
+            routerLinkActive="active"
+    >
+      דף הבית
+    </button>
     <button class="sn-tool-bar-item" 
             routerLink="/order" 
             mat-raised-button 
@@ -11,9 +20,6 @@
             routerLinkActive="active"
     >
       הזמן
-    </button>
-    <button class="sn-tool-bar-item" mat-raised-button color="accent">
-      תפריט
     </button>
     <button class="sn-tool-bar-item" mat-raised-button color="accent">
       שולחן

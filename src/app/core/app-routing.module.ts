@@ -5,7 +5,7 @@ import { OrderComponent } from '../order/order.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
     data: {
       animation: 'Home'
@@ -17,6 +17,11 @@ const routes: Routes = [
     data: {
       animation: 'Order'
     }
+  },
+  {
+    path: '',
+    redirectTo: 'home', 
+    pathMatch: 'full' 
   },
 ];
 
