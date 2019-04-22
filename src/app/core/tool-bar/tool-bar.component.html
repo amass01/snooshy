@@ -31,11 +31,16 @@
     <span class="flex-spacer"></span>
     <button class="shopping-basket-button" 
             routerLink="/basket"
-            mat-mini-fab 
+            mat-icon-button
             color="accent" 
-            aria-label="shopping cart"
+            
     >
-      <mat-icon color="primary">
+      <mat-icon color="primary"
+                aria-label="shopping cart"
+                [matBadge]="basketItemsNumber" 
+                matBadgePosition="after" 
+                matBadgeColor="accent"
+      >
           shopping_carts
       </mat-icon>
     </button>

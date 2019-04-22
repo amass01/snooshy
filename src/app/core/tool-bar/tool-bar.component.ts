@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { BasketService } from "../services/basket.service";
+import { Product } from "../models/product";
 
 @Component({
   selector: "sn-tool-bar",
@@ -7,9 +9,16 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ToolBarComponent implements OnInit {
 
-  constructor() { }
+  public basketItemsNumber: number;
+
+  constructor(
+    private basketService: BasketService,
+  ) { }
 
   ngOnInit() {
+    this.basketService.products.subscribe((basketProdcuts: Product[]) => {
+      this.basketItemsNumber = basketProdcuts.length;
+    });
   }
 
 }

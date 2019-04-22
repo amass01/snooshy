@@ -15,8 +15,8 @@ export class BasketService {
 
   private productsSub: BehaviorSubject<Product[]> = new BehaviorSubject([]);
 
-  get products() {
-    return asObservable(this.productsSub);
+  get products(): Observable<Product[]> {
+    return this.productsSub.asObservable();
   }
 
   addProductToBasket(product: Product) {

@@ -1,7 +1,17 @@
 <div class="sn-basket">
   <div class="sn-container">
     <div class="sn-basket-content">
-      סל הקניות
+      <mat-toolbar class="sn-order-section-toolbar" 
+                     color="accent"
+        >
+          <mat-toolbar-row class="toolbar-row">
+            <span>סל הקניות</span>
+          </mat-toolbar-row>
+        </mat-toolbar>
+
+        <mat-list role="list">
+          <mat-list-item *ngFor="let item of getProducts() | async" role="listitem">{{item.name}}</mat-list-item>
+        </mat-list>
     </div>
   </div>
 </div>
