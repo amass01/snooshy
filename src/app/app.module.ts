@@ -2,6 +2,7 @@ import { OrderModule } from "./order/order.module";
 import { NgModule } from "@angular/core";
 import { AppComponent } from "./app.component";
 import { CoreModule } from "./core/core.module";
+import { BasketModule } from "./basket/basket.module";
 
 @NgModule({
   declarations: [
@@ -10,6 +11,7 @@ import { CoreModule } from "./core/core.module";
   imports: [
     CoreModule,
     OrderModule,
+    BasketModule,
   ],
   providers: [],
   bootstrap: [
